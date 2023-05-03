@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Playground</string>
+
+    <!--    MAIN MENU-->
+    <string name="main_menu_title">Main Menu</string>
+    <string name="main_menu_tinder_clone">Tinder Clone</string>
+
+
+    <!--    TINDER CLONE-->
+
 </resources>
