@@ -13,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.stanroy.playground.common.Screen
+import com.stanroy.playground.module_poke_swipe.presentation.screen_main.PokeSwipeMainScreen
 import com.stanroy.playground.ui.theme.PlaygroundTheme
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -29,8 +30,8 @@ class MainActivity : ComponentActivity() {
 
         val menuItems = mutableListOf<MainMenuItem>(
             MainMenuItem(
-                getMainMenuTitle(R.string.main_menu_tinder_clone),
-                Screen.TinderCloneMainScreen.route
+                getMainMenuTitle(R.string.main_menu_poke_swipe),
+                Screen.PokeSwipeMainScreen.route
             )
         )
         setContent {
@@ -42,10 +43,14 @@ class MainActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     NavHost(
                         navController = navController,
-                        startDestination = Screen.MainMenu.route
+                        startDestination = Screen.PokeSwipeMainScreen.route
                     ) {
                         composable(Screen.MainMenu.route) {
                             MainMenu(navController, menuItems)
+                        }
+
+                        composable(Screen.PokeSwipeMainScreen.route) {
+                            PokeSwipeMainScreen()
                         }
                     }
                 }

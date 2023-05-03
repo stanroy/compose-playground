@@ -3,9 +3,13 @@
 
     <!--    MAIN MENU-->
     <string name="main_menu_title">Main Menu</string>
-    <string name="main_menu_tinder_clone">Tinder Clone</string>
+    <string name="main_menu_poke_swipe">Poke Swipe</string>
 
 
-    <!--    TINDER CLONE-->
+    <!--    POKE SWIPE-->
+    <string name="poke_swipe_title">poke swipe</string>
+    <string name="poke_swipe_cd_swiping">Swiping</string>
+    <string name="poke_swipe_cd_liked">Liked</string>
+    <string name="poke_swipe_cd_favorites">Favorites</string>
 
 </resources>
